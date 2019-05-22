@@ -1,0 +1,45 @@
+{
+   "Go WebAssembly starter template": {
+      "prefix": "!goWasmTemplate",
+      "body": [
+         "package main",
+         "",
+         "import (",
+         "  \"syscall/js\"",
+         ")",
+         "",
+         "func main() {",
+         "  done := make(chan struct{}, 0)",
+         "  registerCallbacks()",
+         "  <-done",
+         "}",
+         "",
+         "func registerCallbacks() {",
+         "  //your callbacks here. For example js.Global().Set(\"wasmFunctionName\", js.Func(wasmFunction))",
+         "}",
+         "",
+         "var wasmFunction js.Func = js.FuncOf(func(this js.Value, args []js.Value) interface{} {",
+         "  //your code here.",
+         "  //return nil or function",
+         "})"
+      ],
+      "description": "Creates WebAssembly starter template"
+   },
+   "Go WebAssembly function": {
+      "prefix": "!goWasmFunction",
+      "body": [
+         "var wasmFunction js.Func = js.FuncOf(func(this js.Value, args []js.Value) interface{} {",
+         "  //your code here.",
+         "  //return nil or function",
+         "})"
+      ],
+      "description": "Creates WebAssembly function"
+   },
+   "Go WebAssembly variable": {
+      "prefix": "!goWasmVariable",
+      "body": [
+         "js.Global().Set(/* var name */, /* var value */)"
+      ],
+      "description": "Creates WebAssembly variable"
+   }
+}

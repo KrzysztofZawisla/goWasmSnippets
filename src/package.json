@@ -1,0 +1,20 @@
+{
+    "name": "gowasmsnippets",
+    "displayName": "goWasmSnippets",
+    "description": "Simple snippets to generate wasm template",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.34.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "go",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
