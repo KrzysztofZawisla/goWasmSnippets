@@ -18,9 +18,9 @@
          "  //your callbacks here. For example js.Global().Set(\"wasmFunctionName\", js.Func(wasmFunction))",
          "}",
          "",
-         "func WasmFunction(func(this js.Value, args []js.Value) interface{} {",
+         "func WasmFunction(this js.Value, args []js.Value) interface{} {",
          "  //your code here.",
-         "  //return nil or function",
+         "  return nil",
          "}"
       ],
       "description": "Creates WebAssembly starter template"
@@ -28,9 +28,9 @@
    "Go WebAssembly function": {
       "prefix": "!goWasmFunction",
       "body": [
-         "func WasmFunction(func(this js.Value, args []js.Value) interface{} {",
+         "func WasmFunction(this js.Value, args []js.Value) interface{} {",
          "  //your code here.",
-         "  //return nil or function",
+         "  return nil",
          "}"
       ],
       "description": "Creates WebAssembly function"
