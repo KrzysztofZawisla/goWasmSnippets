@@ -18,20 +18,20 @@
          "  //your callbacks here. For example js.Global().Set(\"wasmFunctionName\", js.Func(wasmFunction))",
          "}",
          "",
-         "var wasmFunction js.Func = js.FuncOf(func(this js.Value, args []js.Value) interface{} {",
+         "func WasmFunction(func(this js.Value, args []js.Value) interface{} {",
          "  //your code here.",
          "  //return nil or function",
-         "})"
+         "}"
       ],
       "description": "Creates WebAssembly starter template"
    },
    "Go WebAssembly function": {
       "prefix": "!goWasmFunction",
       "body": [
-         "var wasmFunction js.Func = js.FuncOf(func(this js.Value, args []js.Value) interface{} {",
+         "func WasmFunction(func(this js.Value, args []js.Value) interface{} {",
          "  //your code here.",
          "  //return nil or function",
-         "})"
+         "}"
       ],
       "description": "Creates WebAssembly function"
    },
